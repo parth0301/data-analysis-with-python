@@ -1,0 +1,63 @@
+*In this module, we would learn how to understand the data and about how to use the libraries in Python to help us import data
+from multiple sources at once. We will learn how to perform basic operations in the dataset and also we would be able to
+explore and analyze the imported dataset.*
+
+
+Why Data Analysis?
+• Data is found everywhere.
+• Data Analysis helps us answer the relevant questions that come up with the data.
+• Data Analysis plays an important role in:
+  - Discovering useful information
+  - Predicting future/unknown to some extent
+  - Answering questions
+
+
+Suppose Nihal wants to sell his car. 
+• To get the perfect price for the car, we as Data Scientists shall find the most reasonable price by which the car would get 
+sold at the earliest.
+• We should get hold of a dataset and import it in the software currently in use. (VS Code, Jupyter Notebook, etc)
+• The dataset would include various attributes such as safety of the vehicle, normalized-losses per year, kilometers driven, 
+mileage, etc. 
+• Each value in the dataset is seperated by a comma.
+
+*Self-Learning!*
+*What is the range of number of columns in a dataset?*
+
+In order to do data analysis in Python, we should first know a little bit about the main packages relevant to analysis 
+in Python.
+
+Python library is a collection of functions and methods that allow you to perform lots of actions without writing any code. 
+The libraries usually contain built in modules providing different functionalities which you can use directly.
+And there are extensive libraries offering a broad range of facilities.
+
+The three groups of Python Data Analysis Libraries are:
+• Scientific Computing Libraries - Includes Pandas, NumPy and SciPy
+• Visualization Libraries - Includes Matplotlib and Seaborn
+• Algorithmic Libraries - Includes Scikit-Learn (Machine Learning) and Statsmodels (data exploration, estimate statistic models)
+
+What does importing data actually means?
+- The process of loading and reading data into Python from various resources.
+
+• Two important properties:
+- Formats: various format types: .csv, .hdf, .json, .xlsx ...
+- File Path of the dataset: saved in computer (/Desktop/sample_dataset.csv), from the internet (https://archive/import1.data)
+
+Steps to import a CSV into Python:
+  import pandas as pd
+  url = "https://archive/import1.data"
+  df = pd.read_csv(url, header = None)
+
+Printing dataframe in Python:
+• 'df' prints the entire dataframe
+• 'df.head(n)' to show the first *n* rows of data frame
+• 'df.tail(n)' shows the bottom *n* rows of the data frame
+• 'df.describe() returns a statistical summary of the data frame
+• 'df.describe(include="all") provides us with full summary statistics of the data frame
+• 'df.info() returns a concise summary of the data frame
+
+Exporting to Different Formats in Python:
+Data Format              Read                 Save
+  csv                pd.read_csv()         df.to_csv()
+  sql                pd.read_sql()         df.to_sql()
+  json               pd.read_json()        df.to_json()
+  excel              pd.read_excel()       df.to_excel()
