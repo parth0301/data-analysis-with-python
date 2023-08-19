@@ -21,7 +21,7 @@ mileage, etc.
 • Each value in the dataset is seperated by a comma.
 
 *Self-Learning!*
-*What is the range of number of columns in a dataset?*
+What is the range of number of columns in a dataset?
 
 In order to do data analysis in Python, we should first know a little bit about the main packages relevant to analysis 
 in Python.
